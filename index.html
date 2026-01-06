@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bekery</title>
+    <link rel="shortcut icon" href="./images/sweet-bakery-180x180.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container-fluid justify-content-between justify-content-lg-center gap-xl-5 gap-lg-3">
+
+            <a class="navbar-brand me-0" href="#">
+                <img src="./images/sweet-bakery-180x180.png" alt="Sweet Bakery" class="navbar-logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <div class="d-flex align-items-center flex-column flex-lg-row mt-4 mt-lg-0 gap-xl-5 gap-lg-3">
+                    <ul class="navbar-nav mb-3 mb-lg-0 text-center">
+                        <li class="nav-item"><a class="nav-link mx-2" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link mx-2" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link mx-2" href="#">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link mx-2" href="#">Contacts</a></li>
+                    </ul>
+
+                    <div class="social-icons d-flex justify-content-center mb-3 mb-lg-0">
+                        <a href="#" class="social-link"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+
+                    <a href="#" class="btn btn-order">Make an Order</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Carousel Item Styling -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active"
+                style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072');">
+                <div class="carousel-overlay"></div>
+                <div class="container h-100 d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <div class="hero-text text-white text-center text-lg-start">
+                        <h1 class="display-3 fw-bold mb-4">Welcome <br> to Sweet Bakery</h1>
+                        <div class="opening-hours mb-5">
+                            <p class="mb-1 fw-bold first-p-small">Opening Hours</p>
+                            <p class="mb-0 first-p-small">Monday–Friday: 07:30 AM – 23:00 PM</p>
+                            <p class="mb-0 first-p-small">Weekends: 07:30 AM – 03:00 PM</p>
+                        </div>
+                        <a href="#" class="btn btn-hero px-4 py-2 fs-5 fw-semibold">Order Sweets!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('./images/her sec bakery-1920x1280.jpg');">
+                <div class="carousel-overlay"></div>
+                <div class="container h-100 d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <div class="hero-text text-white text-center text-lg-start">
+                        <h1 class="display-4 fw-bold mb-4">Enjoy Our Food Experience</h1>
+                        <div class="opening-hours mb-5">
+                            <p class="mb-1 custom-p-large">We offer a large assortment from cakes to small pastries</p>
+                        </div>
+                        <a href="#" class="btn btn-hero px-5 py-3 fs-5 fw-semibold">Order Sweets!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('./images/hero third bakery2-1920x1280.jpg');">
+                <div class="carousel-overlay"></div>
+                <div class="container h-100 d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <div class="hero-text text-white text-center text-lg-start">
+                        <h1 class="display-4 fw-bold mb-4">Yummy Delicious Сakes</h1>
+                        <div class="opening-hours mb-5">
+                            <p class="mb-1 custom-p-large">We accept orders for birthdays, weddings and celebrations</p>
+                        </div>
+                        <a href="#" class="btn btn-hero px-5 py-3 fs-5 fw-semibold">Order Sweets!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+    <!-- Specialties Section Styling -->
+    <section class="specialties-section py-5">
+        <div class="container">
+            <h2 class="specialties-title text-center mb-5">Our Specialties</h2>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="specialty-card text-center">
+                        <div class="img-wrapper mx-auto mb-3">
+                            <img src="./images/cupcake.jpg" alt="Cupcakes">
+                        </div>
+                        <h5>Cupcakes</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="specialty-card text-center">
+                        <div class="img-wrapper mx-auto mb-3">
+                            <img src="./images/macrons.jpg" alt="Macarons">
+                        </div>
+                        <h5>Macarons</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="specialty-card text-center">
+                        <div class="img-wrapper mx-auto mb-4">
+                            <img src="./images/small cakes.jpg" alt="Small Cakes">
+                        </div>
+                        <h5>Small Cakes</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="specialty-card text-center">
+                        <div class="img-wrapper mx-auto mb-4">
+                            <img src="./images/croissants.jpg" alt="Croissants">
+                        </div>
+                        <h5>Croissants</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="specialty-card text-center">
+                        <div class="img-wrapper mx-auto mb-4">
+                            <img src="./images/apple pie.jpg" alt="Apple Pie">
+                        </div>
+                        <h5>Apple Pie</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="specialty-card text-center">
+                        <div class="img-wrapper mx-auto mb-4">
+                            <img src="./images/cheesecake.jpg" alt="Cheesecake">
+                        </div>
+                        <h5>Cheesecake</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Pending -->
+    <script src="bootstrap.js"></script>
+</body>
+
+</html>

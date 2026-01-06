@@ -1,0 +1,227 @@
+/* Font styling */
+body {
+    font-family: sans-serif;
+}
+
+
+.navbar-logo {
+    width: 120px;
+    height: auto;
+    transition: width 0.3s ease;
+}
+
+/* Links and Icons common style */
+.navbar-nav .nav-link,
+.social-link {
+    color: #4b4342 !important;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 2px;
+    margin: 0 12px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link::after,
+.social-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6bcbc9;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.social-link:hover::after {
+    width: 100%;
+}
+
+.btn-order {
+    background-color: #6bcbc9;
+    color: white !important;
+    border-radius: 50px;
+    padding: 9px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+
+.btn-order:hover {
+    background-color: #5bb3b1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Carousel Item Styling */
+.carousel-item {
+    height: 85vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    z-index: 5;
+    width: 1000px;
+}
+
+.first-p-small {
+    font-size: 20px !important;
+}
+
+.custom-p-large {
+    font-size: 35px !important;
+    letter-spacing: 1px;
+}
+
+.btn-hero {
+    background-color: #6bcbc9;
+    color: white !important;
+    border-radius: 50px;
+    border: none;
+    display: inline-block;
+    padding: 12px 40px !important;
+}
+
+
+
+/* Specialties Section Styling */
+.specialties-section {
+    padding: 60px 0;
+    position: relative;
+    background-image: url('./images/backgroundsection.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.specialties-title {
+    font-weight: 700;
+    color: #4b4342;
+    font-size: 3.2rem;
+    padding: 40px 0;
+    letter-spacing: 1px;
+}
+
+.img-wrapper {
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.specialty-card:hover img {
+    transform: scale(1.1);
+}
+
+.specialty-card h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4b4342;
+    margin-top: 20px;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+
+    /* Navbar */
+    .navbar-collapse {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-logo {
+        width: 60px;
+        /* Jo aapne set ki hai */
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .nav-link::after,
+    .social-link::after {
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .nav-link:hover::after,
+    .social-link:hover::after {
+        width: 40% !important;
+    }
+
+
+    /* Carousel */
+    .carousel-item {
+        height: 75vh;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .custom-p-large {
+        font-size: 18px !important;
+    }
+
+    .hero-text .btn-hero {
+        margin: 0 auto;
+    }
+
+    .btn-hero {
+        font-size: smaller !important;
+        padding: 10px 30px !important;
+    }
+
+
+    /* Specialties Section Styling */
+    .specialties-title {
+        padding: 0%;
+    }
+}
+
+/* Specialties Section Styling */
+@media (max-width: 576px) {
+    .img-wrapper {
+        max-width: 220px;
+    }
+
+    .specialties-title {
+        font-size: 2.2rem !important;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .specialties-section {
+        background-attachment: scroll;
+    }
+}
