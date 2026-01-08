@@ -1,6 +1,10 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url(./fonts/DMSans_24pt-Regular.ttf);
+}
 /* Font styling */
 body {
-    font-family: sans-serif;
+    font-family: "DM Sans";
 }
 
 
@@ -45,7 +49,7 @@ body {
     border-radius: 50px;
     padding: 9px 22px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     border: none;
     white-space: nowrap;
     letter-spacing: 1px;
@@ -103,7 +107,6 @@ body {
     padding: 60px 0;
     position: relative;
     background-image: url('./images/backgroundsection.jpg');
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
@@ -146,7 +149,161 @@ body {
 
 
 
-/* Responsive Adjustments */
+/* After Pending */
+/* --- Magic Processing Styling --- */
+.hero-section {
+    position: relative;
+    background: url('./images/backgroundsectwo.jpg') no-repeat center center/cover;
+    min-height: 80vh; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    z-index: 1;
+    overflow: hidden;
+}
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgb(126, 212, 209,0.86);
+    z-index: -1;
+}
+.magic-card {
+    border: 2px solid white;
+    border-radius: 10px;
+    max-width: 900px !important;
+    width: 90%;
+    padding: 80px 40px !important;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    text-align: center;
+}
+
+.magic-card h2 {
+    font-size: 2.5rem !important;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.magic-card p {
+    max-width: 550px;
+    margin: 20px auto;
+    line-height: 1.6;
+    color: white;
+    opacity: 0.9;
+    font-size: 16px !important;
+}
+.cust-btn {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 11px 26px !important;
+    letter-spacing: 1px;
+    font-size: 18px !important;
+  }
+  
+  .cust-btn:hover {
+    background-color: #ffffff;
+    color: gray !important;
+  }
+  
+.icon-box i {
+    width: 60px;
+    margin-bottom: 20px;
+    font-size: 60px;    
+}
+
+
+
+/* Our Creations Section */
+.creations-section {
+    background-color: #ffffff;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+.creation-icon i {
+    color: #ff91a4;
+}
+.img-wrap {
+    overflow: hidden;
+    border-radius: 12px;
+}
+.img-wrap img {
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.img-wrap img:hover {
+    transform: scale(1.1);
+}
+.creations-section h2 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #4b4342;
+}
+
+
+
+
+
+/* Recpies Section Pending*/
+
+
+
+
+
+
+/* --- Magic Processing Styling --- */
+@media (min-width: 1880px) {
+    .magic-card {
+        max-width: 1100px;
+        padding: 100px 60px !important;
+    }
+    .magic-card h2 { font-size: 3.5rem; }
+    .magic-card p { font-size: 1.4rem; max-width: 700px; }
+
+/*  Our Creations Section */
+    .creations-section {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    
+    .creations-section h2 {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .magic-card {
+        max-width: 750px;
+        padding: 60px 30px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section { min-height: 100vh; }
+    .magic-card {
+        padding: 50px 20px !important;
+    }
+    .magic-card h2 { font-size: 2rem; }
+    .magic-card p { font-size: 0.7rem !important; }
+}
+
+@media (max-width: 480px) {
+    .magic-card {
+        padding: 30px 15px !important;
+        width: 95%;
+    }
+    .magic-card h2 { font-size: 1.5rem; }
+    .icon-box img { width: 50px; }
+}
+
+
 @media (max-width: 991px) {
 
     /* Navbar */
@@ -161,7 +318,6 @@ body {
 
     .navbar-logo {
         width: 60px;
-        /* Jo aapne set ki hai */
     }
 
     .social-icons {
@@ -207,6 +363,14 @@ body {
     .specialties-title {
         padding: 0%;
     }
+
+
+/*  Our Creations Section */
+    .creations-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
 }
 
 /* Specialties Section Styling */
@@ -223,5 +387,12 @@ body {
 
     .specialties-section {
         background-attachment: scroll;
+    }
+
+
+/*  Our Creations Section */
+    .creations-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
